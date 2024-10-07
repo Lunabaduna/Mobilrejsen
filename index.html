@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        header {
+            text-align: center;
+            background-color: cornflowerblue;
+            height: 900px;
+        }
+
+        .hjem-knap {}
+
+        .test {
+            background-color: yellow;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .MENU {
+            background-color: blanchedalmond;
+            display: grid;
+            grid-gap: 5px;
+            padding: 5px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .MENU>div {
+            height: 50vh;
+        }
+
+        .box1 {
+            background-color: darksalmon;
+        }
+
+        .box1 .btn {}
+
+        .MENU .btn {
+            position: absolute;
+            background-color: #f1f1f1;
+            color: black;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 9px #999;
+        }
+
+        .MENU .btn:hover {
+            background-color: pink;
+            color: white;
+        }
+
+        .MENU .btn:active {
+            background-color: pink;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .box2 {
+            background-color: black;
+            background-image:url(images/IMG_0617.JPG);
+            background-size: cover;
+        }
+
+        .box2 .btn {}
+
+        .box3 {
+            background-color: lightpink;
+        }
+
+        .box4 {
+            background-color: mistyrose;
+        }
+        img {
+            width:100% ;
+            height: ;
+            object-fit: cover;
+            
+        }
+
+    </style>
+</head>
+
+<header>
+    <div id="HJEM"> <button onclick="document.location='file:///Users/Luna/Documents/Det%20poetiske%20internet%20workshop/Hjemmesiden/01_minhjemmeside.html'" class="hjem-knap"> HJEM </button>
+    </div>
+    <p id="myP" style="position:fixed">
+        Hvis du ruller ned, vil du finde 4 menuer. Disse menuer vil give dig et indblik i, hvordan det var for mig, at starte livet i en verden uden smart phones, til hvordan det er at have en på mig hvert sekund.
+    </p>
+</header>
+
+<body>
+    <div class="MENU">
+        <div class="box1">
+            <img src="images/IMG_0617.JPG" style="width:40%">
+            <button onclick="document.location='file:///Users/Luna/Documents/Det%20poetiske%20internet%20workshop/Hjemmesiden/Underside_minf%C3%B8rste.html'" class="btn"> min første mobil </button>
+        </div>
+        <div class="box2">  <button onclick="document.location='file:///Users/Luna/Documents/Det%20poetiske%20internet%20workshop/Hjemmesiden/Underside_smartphone.html'" class="btn">starten på smartphones</button> </div>
+        <div class="box3"> <img src="images/IMG_0617.JPG" style="width:40%"> <button onclick="document.location='file:///Users/Luna/Documents/Det%20poetiske%20internet%20workshop/Hjemmesiden/Underside_socialemedier.html'" class="btn">sociale medier </button></div>
+        <div class="box4"> <img src="images/IMG_0617.JPG" style="width:40%"> <button onclick="document.location='file:///Users/Luna/Documents/Det%20poetiske%20internet%20workshop/Hjemmesiden/Underside_4ever.html'" class="btn">luna+mobil=4-ever??</button> </div>
+    </div>
+
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            if (document.documentElement.scrollTop > 10) {
+                document.getElementById("myP").className = "test";
+                document.getElementById("hjem-knap").className = "test";
+            } else {
+                document.getElementById("myP").className = "";
+                document.getElementById("hjem-knap").className = "";
+            }
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>
