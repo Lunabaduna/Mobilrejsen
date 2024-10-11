@@ -109,6 +109,35 @@
             I seek the spark that still remains.
         </main>
     </div>
+    
+     <input type="radio" id="sans" name="font">
+    <label> Sans</label>
+    <input type="radio" id="serif" name="font">
+    <label> Serif</label>
+    <input type="radio" id="mono" name="font">
+    <label> Mono</label>
+
+
+    <script>
+        let btnBody = document.querySelector("main");
+
+        let sans = document.getElementById("sans");
+        let serif = document.getElementById("serif");
+        let mono = document.getElementById("mono");
+
+        sans.addEventListener("click", function() {
+            btnBody.style.fontFamily = "sans-serif";
+
+        });
+        serif.addEventListener("click", function() {
+            btnBody.style.fontFamily = "serif";
+        });
+
+        mono.addEventListener("click", function() {
+            btnBody.style.fontFamily = "Courier New", monospace;
+        });
+
+    </script>
     <footer>
         <p> Vores forhold går op og ned. Jeg prøver at se alle dine gode sider. Det er din egen skyld, at jeg ikke kan elske dig længere. </p>
     </footer>

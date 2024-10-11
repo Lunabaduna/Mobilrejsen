@@ -88,7 +88,34 @@
 
         </main>
     </div>
-    
+       <input type="radio" id="sans" name="font">
+    <label> Sans</label>
+    <input type="radio" id="serif" name="font">
+    <label> Serif</label>
+    <input type="radio" id="mono" name="font">
+    <label> Mono</label>
+
+
+    <script>
+        let btnBody = document.querySelector("main");
+
+        let sans = document.getElementById("sans");
+        let serif = document.getElementById("serif");
+        let mono = document.getElementById("mono");
+
+        sans.addEventListener("click", function() {
+            btnBody.style.fontFamily = "sans-serif";
+
+        });
+        serif.addEventListener("click", function() {
+            btnBody.style.fontFamily = "serif";
+        });
+
+        mono.addEventListener("click", function() {
+            btnBody.style.fontFamily = "Courier New", monospace;
+        });
+
+    </script>
     
     <footer>
         <p> Min første mobiltelefon fik jeg i 2007. Jeg fik den to år tidligere, end mine brødre.
