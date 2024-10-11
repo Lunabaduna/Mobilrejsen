@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Index_stylesheet.css">
+    <meta charset="utf-8">
+
+    <title>Mobilen og jeg - min hjemmeside</title>
+</head>
+
+<body>
+
+    <script>
+        function delayRedirect(event, url) {
+            event.preventDefault();
+            document.body.style.cursor = 'wait';
+            event.target.style.cursor = 'wait';
+            setTimeout(function() {
+                window.location.href = url;
+                document.body.style.cursor = 'default';
+                event.target.style.cursor = 'default';
+            }, 3000);
+        }
+
+    </script>
+
+    <header>
+        <div id="HJEM"> <a href="index.html"> <button class="hjem-knap"> HJEM </button>
+            </a> </div>
+    </header>
+
+    <main>
+        <div class="image-grid">
+            <div class="image-container">
+                <a href="Underside_minf%C3%B8rste.html" onclick="delayRedirect(event, 'Underside_minf%C3%B8rste.html')">
+                    <img src="images/folder_ikon.avif" alt="Folder Icon">
+                    <span class="button-text">Mobil #1</span>
+                </a>
+            </div>
+
+            <div class="image-container">
+                <a href="Underside_smartphone.html">
+                    <img src="images/folder_ikon.avif" alt="Folder Icon">
+                    <span class="button-text">Smart-mobil</span>
+                </a>
+            </div>
+
+            <div class="image-container">
+                <a href="Underside_socialemedier.html">
+                    <img src="images/folder_ikon.avif" alt="Folder Icon">
+                    <span class="button-text">SoME!</span>
+                </a>
+            </div>
+
+            <div class="image-container">
+                <a href="Underside_4ever.html">
+                    <img src="images/folder_ikon.avif" alt="Folder Icon">
+                    <span class="button-text">Mig og mobil <br> forevigt?</span>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
